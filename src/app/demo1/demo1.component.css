@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+
+.main_scene{
+	display:flex;
+}
+
+.shapes-group{
+	padding-left:20px;
+}
+.shapes-group button{
+	padding-left:0px;
+}
+.input__shapes{
+	width:27px;
+	margin-right:5px;
+}
+.labels__shapes{
+	font-size:12px;
+}
+
+label { margin-right: 10px; }
+.images_shape{
+	width:53px;
+	height:40px;
+	padding:5px;
+}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
