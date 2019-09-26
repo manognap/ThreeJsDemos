@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>three.js canvas - geometry - cube</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	</head>
+	<body>
+	<p class="logoLabel">Cassandra</p>
+		<div class="main_scene">
+		<!-- TopNavPanel -->
+		
+		<!-- TopNavPanel End -->
+		<!-- Scene -->
+		
+			<div #rendererContainer></div>
+		<!-- Scene end -->
+		<!-- Right Panel -->
+				<div class="shapes-group">
+					<div id="accordion">
+					<div class="card">
+					<div class="card-header" id="main">
+					  <h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMain" aria-expanded="false" aria-controls="collapseThree">
+						 Draw Tools
+						</button>
+					  </h5>
+					</div>
+					<div id="collapseMain" class="collapse" aria-labelledby="main" data-parent="#accordion">
+					  <div class="card-body">
+					   <div class="card">
+						<div class="card-header" id="sub">
+						  <p class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSubContent" aria-expanded="false" aria-controls="collapseThree" (click)='boxGeo()'>
+							  Rectlangle
+							</button>
+						  </p>
+						</div>
+					<div id="collapseSubContent" class="collapse" aria-labelledby="sub" data-parent="#accordion">
+					  <div class="card-body">
+					   <!--specifications-->
+						<div>
+						<label class="labels__shapes">Width:</label>
+						<input type="text" class="input__shapes" (input)="boxGeo($event.target.value,undefined,undefined)"/>
+						<label class="labels__shapes">Height:</label>
+						<input type="text" class="input__shapes"(input)="boxGeo(undefined,$event.target.value)"/>
+						<label class="labels__shapes" >depth:</label>
+						<input type="text" class="input__shapes" (input)="boxGeo(undefined,undefined,$event.target.value)"/>						
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
+ 
+  </div>
+
+	</body>
+</html>
